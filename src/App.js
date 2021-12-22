@@ -25,28 +25,29 @@ function generateSudoku() {
     }
     result.rows.push(row);
   }
-
   return result;
 }
 
 class App extends Component {
-constructor(props) {
-  super(props);
-  this.state = {
-    sudoku: generateSudoku()
+  constructor(props) {
+    super(props);
+    this.state = {
+      sudoku: generateSudoku()
+    }
   }
-}
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1>
-            Liam's Nuts
+            Sudoku + Solver [WIP]
           </h1>
         </header>
         <SudokuBoard sudoku={this.state.sudoku}/>
+
       </div>
+    
     )
   }
 }
