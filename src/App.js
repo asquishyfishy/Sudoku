@@ -1,5 +1,8 @@
 import React, { Component } from "react"
+import generator from "sudoku"
 import "./App.css"
+
+window.generator = generator
 
 class App extends Component {
   render() {
